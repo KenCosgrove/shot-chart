@@ -25,7 +25,6 @@ a {
 
 .btn-rounded {
   display: flex;
-  flex-basis: 5%;
   color: #fff;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
@@ -60,6 +59,16 @@ ul li ul li a {
 ul li:hover ul li a {
   display: block;
 }
+
+/* media queires for menu options*/
+@media (max-width: 500px) {
+  ul li ul li a {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* end of media queries */
 
 .btns {
   display: flex;
