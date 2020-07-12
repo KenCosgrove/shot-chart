@@ -28,11 +28,11 @@ a:visited {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+  height: 100vh;
 }
 
 .container > div {
   cursor: pointer;
-  height: 210px;
   background-size: cover;
   background-attachment: fixed;
 
