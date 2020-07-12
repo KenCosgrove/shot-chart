@@ -1,0 +1,59 @@
+body {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/71Iw9Qjd2AL._AC_SX522_.jpg)
+    no-repeat center/cover;
+}
+
+a {
+  text-decoration: none;
+  background: darkgray;
+  border-radius: 10px;
+  color: aliceblue;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.main-btns a {
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  color: rgb(10, 51, 87);
+  font-size: 4rem;
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background: gray;
+  opacity: 0.9;
+}
+
+.teams {
+  border: 5px solid black;
+  background: url(data:image/jpeg;base64,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)
+    no-repeat center/cover;
+  margin-top: 2rem;
+}
+
+.teams a {
+  background: none;
+  text-decoration: none;
+
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.main-btns a:hover {
+  background-color: white;
+}
+
+.links {
+  list-style: none;
+  text-align: center;
+}
+
+#T {
+  font-size: 3rem;
+}
+
+.main-btns {
+  text-align: center;
+}
