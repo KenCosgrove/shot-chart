@@ -19,13 +19,13 @@ a {
   width: 100%;
   height: 93vh;
   position: relative;
-  background: url(./court.jpg) no-repeat center center/cover;
+  background: url(../imgs/court.jpg) no-repeat center center/cover;
   margin-top: 3rem;
 }
 
 .btn-rounded {
-  display: inline-block;
-
+  display: flex;
+  flex-basis: 5%;
   color: #fff;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
@@ -45,14 +45,12 @@ a {
   background-color: black;
   opacity: 0.6;
   width: 8rem;
-
   text-align: center;
   margin-top: 0.2rem;
 }
 
 ul li a:hover {
   background-color: blue;
-  display: block;
 }
 
 ul li ul li a {
@@ -69,16 +67,18 @@ ul li:hover ul li a {
 }
 
 .btnsHome {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-
   margin-left: 25rem;
   margin-top: 5rem;
   line-height: 1.5rem;
 }
 
 .btnsAway {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-
   margin-right: 25rem;
   margin-top: 5rem;
   line-height: 1.5rem;
@@ -160,7 +160,6 @@ ul li:hover ul li a {
   padding: 0.5rem;
   font-weight: bold;
   color: white;
-
   text-decoration: underline;
 }
 
