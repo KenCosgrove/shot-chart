@@ -61,7 +61,7 @@ ul li:hover ul li a {
 }
 
 /* media queires for menu options*/
-@media (max-width: 500px) {
+@media (max-width: 2048px) {
   ul li ul li a {
     display: flex;
     flex-direction: column;
