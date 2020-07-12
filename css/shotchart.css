@@ -18,7 +18,6 @@ a {
 .undo {
   height: 1.2rem;
   width: 1.2rem;
- 
 }
 
 .showcase {
@@ -80,8 +79,8 @@ nav {
     justify-content: space-evenly;
     width: 30%;
     margin-bottom: -3rem;
+  }
 }
-
 /* end of media queries */
 
 .btns {
