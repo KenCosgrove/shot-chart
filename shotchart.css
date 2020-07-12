@@ -1,0 +1,273 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: #000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+  margin: 0em;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.showcase {
+  width: 100%;
+  height: 93vh;
+  position: relative;
+  background: url(./court.jpg) no-repeat center center/cover;
+  margin-top: 3rem;
+}
+
+.btn-rounded {
+  display: inline-block;
+
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px rgba(0, 0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.dropdown {
+  text-decoration: none;
+  color: white;
+  line-height: 2rem;
+  background-color: black;
+  opacity: 0.6;
+  width: 8rem;
+
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+ul li a:hover {
+  background-color: blue;
+  display: block;
+}
+
+ul li ul li a {
+  display: none;
+}
+
+ul li:hover ul li a {
+  display: block;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btnsHome {
+  text-align: center;
+
+  margin-left: 25rem;
+  margin-top: 5rem;
+  line-height: 1.5rem;
+}
+
+.btnsAway {
+  text-align: center;
+
+  margin-right: 25rem;
+  margin-top: 5rem;
+  line-height: 1.5rem;
+}
+
+.btnsHome button {
+  background-color: blue;
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  border: 0.5rem black solid;
+}
+
+.btnsAway button {
+  background-color: red;
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  border: 0.5rem black solid;
+}
+
+.popups {
+  height: 4rem;
+  width: 3rem;
+  margin-left: 35rem;
+  margin-top: 20rem;
+  border: 1rem;
+  border: 1rem solid black;
+  padding: 1rem;
+}
+
+.FGA {
+  height: 4rem;
+  width: 3rem;
+  margin-left: 35rem;
+  margin-top: 20rem;
+  border: 1rem;
+  border: 1rem solid black;
+  padding: 1rem;
+}
+
+.TO {
+  height: 4rem;
+  width: 3rem;
+  margin-left: 35rem;
+  margin-top: 20rem;
+  border: 1rem;
+  border: 1rem solid black;
+  padding: 1rem;
+}
+
+.subs {
+  float: right;
+}
+
+.subs h2 {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  background-color: black;
+  border: 1px solid black;
+}
+#subs {
+  color: blue;
+}
+
+.draggable {
+  cursor: move;
+  background-color: white;
+  margin: 1rem;
+  padding: 0.3rem;
+  color: black;
+}
+
+.divider {
+  background-color: black;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: white;
+
+  text-decoration: underline;
+}
+
+.bench {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+/* Modal */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 1.2rem;
+  z-index: 10;
+  background-color: white;
+  width: 30%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body ul {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem;
+}
+.modal-body {
+  text-align: center;
+}
+
+.modal-body li {
+  text-align: left;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#top {
+  font-weight: bold;
+  color: black;
+  line-height: 3rem;
+}
+
+.submit {
+  padding: 1rem;
+}
+
+.names {
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.names li:hover {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}

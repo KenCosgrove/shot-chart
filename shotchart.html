@@ -1,11 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./shotchart.css" />
+    <title>Live Tracker</title>
+    <script defer src="./app.js"></script>
   </head>
   <body>
-    <h1>hi</h1>
+    <div class="showcase">
+      <ul class="btn-rounded">
+        <li>
+          Menu
+          <ul class="dropdown">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Stats</a></li>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">Undo icon</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="btns">
+        <div class="btnsHome">
+          <button data-modal-target="#modalB">
+            FGA
+          </button>
+          <br />
+          <button data-modal-target="#modal">
+            FGM
+         
+          </button > <br />
+          <button data-modal-target="#modalC" >
+            Turnover
+          </button>
+          <br />
+          </button >
+          <button data-modal-target="#modalD">
+            Foul
+          </button>
+          <br />
+        </div>
+     
+      <div class="btnsAway">
+        <button data-modal-target="#modalE">
+          FGA
+        </button>
+        <br />
+        <button data-modal-target="#modalF">
+          FGM
+        </button>
+        <br />
+        <button data-modal-target="#modalG">
+          Turnover
+        </button>
+        <br />
+        <button data-modal-target="#modalH">
+          Foul
+        </button>
+        <br />
+      </div>
+      </div>
+
+
+    <div id="overlay"></div>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">FGM</div>
+        <button data-close-btn class="close-btn">&times</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <span id="top"> <li>Player</li> </span>
+          <span class="names">
+            <li>AJ Gambino</li>
+            <li>Rick Gehman</li>
+            <li>Chris Conlan</li>
+            <li>Joe Slavick</li>
+            <li>Jeff DeSantis</li></span
+          >
+        </ul>
+        <ul>
+          <span id="top"> <li>Assist?</li> </span>
+          <span class="names">
+            <li>AJ Gambino</li>
+            <li>Rick Gehman</li>
+            <li>Chris Conlan</li>
+            <li>Joe Slavick</li>
+            <li>Jeff DeSantis</li></span
+          >
+        </ul>
+        <div class="submit">
+          <button data-close-btn class="close-btn">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div class="modal" id="modalB">
+      <div class="modal-header">
+        <div class="title">FGA</div>
+        <button data-close-btn class="close-btn">&times</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <span id="top"> <li>Player</li> </span>
+          <span class="names">
+            <li>AJ Gambino</li>
+            <li>Rick Gehman</li>
+            <li>Chris Conlan</li>
+            <li>Joe Slavick</li>
+            <li>Jeff DeSantis</li></span
+          >
+        </ul>
+        <ul>
+          <span id="top"> <li>Off Rebound?</li> </span>
+          <span class="names">
+            <li>AJ Gambino</li>
+            <li>Rick Gehman</li>
+            <li>Chris Conlan</li>
+            <li>Joe Slavick</li>
+            <li>Jeff DeSantis</li></span
+          >
+        </ul>
+        <ul>
+          <span id="top"> <li>Def Rebound?</li> </span>
+          <span class="names">
+            <li>#33</li>
+            <li>#20</li>
+            <li>#7</li>
+            <li>#5</li>
+            <li>#23</li></span
+          >
+        </ul>
+        <ul>
+          <span id="top"> <li>Block?</li> </span>
+          <span class="names">
+            <li>#33</li>
+            <li>#20</li>
+            <li>#7</li>
+            <li>#5</li>
+            <li>#23</li></span
+          >
+        </ul>
+        <div class="submit">
+          <button data-close-btn class="close-btn">Submit</button>
+        </div>
+        </div>
+      </div>
+        <div id="overlay"></div>
+        <div class="modal" id="modalC">
+          <div class="modal-header">
+            <div class="title">Turnover</div>
+            <button data-close-btn class="close-btn">&times</button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <span id="top"> <li>Player</li> </span>
+              <span class="names">
+                <li>AJ Gambino</li>
+                <li>Rick Gehman</li>
+                <li>Chris Conlan</li>
+                <li>Joe Slavick</li>
+                <li>Jeff DeSantis</li></span
+              >
+            </ul>
+            <ul>
+              <span id="top"> <li>Steal?</li> </span>
+              <span class="names">
+                <span class="names">
+                  <li>#33</li>
+                  <li>#20</li>
+                  <li>#7</li>
+                  <li>#5</li>
+                  <li>#23</li></span
+                >
+            </ul>
+            <div class="submit">
+              <button data-close-btn class="close-btn">Submit</button>
+            </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div class="modal" id="modalD">
+      <div class="modal-header">
+        <div class="title">Foul</div>
+        <button data-close-btn class="close-btn">&times</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <span id="top"> <li>Player</li> </span>
+          <span class="names">
+            <li>AJ Gambino</li>
+            <li>Rick Gehman</li>
+            <li>Chris Conlan</li>
+            <li>Joe Slavick</li>
+            <li>Jeff DeSantis</li></span
+          >
+        </ul>
+       
+        <div class="submit">
+          <button data-close-btn class="close-btn">Submit</button>
+        </div>
+  </div>
+</div>
+
+
+ <div id="overlay"></div>
+    <div class="modal" id="modalD">
+      <div class="modal-header">
+        <div class="title">Foul</div>
+        <button data-close-btn class="close-btn">&times</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <span id="top"> <li>Player</li> </span>
+          <span class="names">
+            <li> <button> AJ Gambino</button></li>
+            <li>Rick Gehman</li>
+            <li>Chris Conlan</li>
+            <li>Joe Slavick</li>
+            <li>Jeff DeSantis</li></span
+          >
+        </ul>
+       
+        <div class="submit">
+          <button data-close-btn class="close-btn">Submit</button>
+        </div>
+  </div>
+</div>
+
+
+
+<div id="overlay"></div>
+<div class="modal" id="modalE">
+  <div class="modal-header">
+    <div class="title">FGA</div>
+    <button data-close-btn class="close-btn">&times</button>
+  </div>
+  <div class="modal-body">
+    <ul>
+      <span id="top"> <li>Player</li> </span>
+      <span class="names">
+        <li>#33</li>
+        <li>#20</li>
+        <li>#7</li>
+        <li>#5</li>
+        <li>#23</li></span
+      >
+    </ul>
+    <ul>
+      <span id="top"> <li>Off Rebound?</li> </span>
+      <span class="names">
+        <li>#33</li>
+        <li>#20</li>
+        <li>#7</li>
+        <li>#5</li>
+        <li>#23</li></span
+      >
+    </ul>
+    <ul>
+      <span id="top"> <li>Def Rebound?</li> </span>
+      <span class="names">
+        <li>AJ Gambino</li>
+        <li>Rick Gehman</li>
+        <li>Chris Conlan</li>
+        <li>Joe Slavick</li>
+        <li>Jeff DeSantis</li></span
+      >
+    </ul>
+    <ul>
+      <span id="top"> <li>Block?</li> </span>
+      <span class="names">
+        <li>AJ Gambino</li>
+        <li>Rick Gehman</li>
+        <li>Chris Conlan</li>
+        <li>Joe Slavick</li>
+        <li>Jeff DeSantis</li></span
+      >
+    </ul>
+    <div class="submit">
+      <button data-close-btn class="close-btn">Submit</button>
+    </div>
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+  <div class="modal" id="modalF">
+    <div class="modal-header">
+      <div class="title">FGM</div>
+      <button data-close-btn class="close-btn">&times</button>
+    </div>
+    <div class="modal-body">
+      <ul>
+        <span id="top"> <li>Player</li> </span>
+        <span class="names">
+          <li>#33</li>
+          <li>#20</li>
+          <li>#7</li>
+          <li>#5</li>
+          <li>#23</li></span
+        >
+      </ul>
+      <ul>
+        <span id="top"> <li>Assist?</li> </span>
+        <span class="names">
+          <li>#33</li>
+          <li>#20</li>
+          <li>#7</li>
+          <li>#5</li>
+          <li>#23</li></span
+        >
+      </ul>
+      <div class="submit">
+        <button data-close-btn class="close-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+  <div class="modal" id="modalH">
+    <div class="modal-header">
+      <div class="title">Foul</div>
+      <button data-close-btn class="close-btn">&times</button>
+    </div>
+    <div class="modal-body">
+      <ul>
+        <span id="top"> <li>Player</li> </span>
+        <span class="names">
+          <li>#33</li>
+          <li>#20</li>
+          <li>#7</li>
+          <li>#5</li>
+          <li>#23</li></span
+        >
+      </ul>
+     
+      <div class="submit">
+        <button data-close-btn class="close-btn">Submit</button>
+      </div>
+</div>
+</div>
+
+<div id="overlay"></div>
+<div class="modal" id="modalG">
+  <div class="modal-header">
+    <div class="title">Turnover</div>
+    <button data-close-btn class="close-btn">&times</button>
+  </div>
+  <div class="modal-body">
+    <ul>
+      <span id="top"> <li>Player</li> </span>
+      <span class="names">
+        <span class="names">
+          <li>#33</li>
+          <li>#20</li>
+          <li>#7</li>
+          <li>#5</li>
+          <li>#23</li></span
+        >
+    </ul>
+    <ul>
+      <span id="top"> <li>Steal?</li> </span>
+      <span class="names">
+        <li>AJ Gambino</li>
+        <li>Rick Gehman</li>
+        <li>Chris Conlan</li>
+        <li>Joe Slavick</li>
+        <li>Jeff DeSantis</li></span
+      >
+    </ul>
+    
+    <div class="submit">
+      <button data-close-btn class="close-btn">Submit</button>
+    </div>
+</div>
+</div>
+
+<div id="overlay"></div>
+<div class="modal" id="modalX">
+  <div class="modal-header">
+    <div id= "subs" class="title">Subs</div>
+    <button data-close-btn class="close-btn">&times</button>
+  </div>
+  <div class="modal-body">
+   
+<div class="container">
+<p class="draggable" draggable="true">AJ Gambino</p>
+<p class="draggable" draggable="true">Rick Gehman</p>
+<p class="draggable" draggable="true"> Chris Conlan</p>
+<p class="draggable" draggable="true"> Joe Slavick</p>
+<p class="draggable" draggable="true"> Jeff DeSantis</p>
+</div>
+<p class = "bench">Bench</p>
+ <div class="container">
+  <p class="draggable" draggable="true"> Bugs Bunny</p>
+  <p class="draggable" draggable="true"> Lola Bunny</p>
+  <p class="draggable" draggable="true"> Michael Jordan</p>
+  <p class="draggable" draggable="true"> Bill Murray</p>
+  <p class="draggable" draggable="true"> Daffy Duck</p>
+  </div>
+</div>
+    <div class="submit">
+      <button data-close-btn class="close-btn">Submit</button>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="subs">
+  <h2>Subs</h2>
+  <button class="home" data-modal-target="#modalX">  Home </button>
+  <button class="away">Away</button>
+  </div>
+  
+
+
   </body>
 </html>
